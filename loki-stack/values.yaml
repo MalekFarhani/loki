@@ -43,7 +43,10 @@ grafana:
       maxLines: 1000
   image:
     tag: latest
-
+  service:
+    type: LoadBalancer  
+  adminUser: malik
+  adminPassword: adactim
 prometheus:
   enabled: false
   isDefault: false
